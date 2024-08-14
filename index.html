@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="/main.css" />
+
+    <!-- Google Font - Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header class="full-header">
+        <div class="employee">
+          <img
+            src="images/image-jeremy.png"
+            alt="profile picture of employee"
+          />
+          <div id="employee-info">
+            <h6>Report for</h6>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <nav class="nav">
+          <h6 id="first-second-nav" class="nav-links">Daily</h6>
+          <h6 id="middle-nav" class="nav-links">Weekly</h6>
+          <h6 id="first-second-nav" class="nav-links">Monthly</h6>
+        </nav>
+      </header>
+      <section class="overall-hours">
+        <!-- Work Hours Container -->
+        <div id="block-one" class="hour-blocks">
+          <div id="orange" class="colors">
+            <img src="images/icon-work.svg" alt="suitcase icon" />
+          </div>
+          <div id="work-hours" class="hours">
+            <div class="flexbox-1">
+              <h5>Work</h5>
+              <img
+                src="images/icon-ellipsis.svg"
+                alt="ellipsis menu button"
+                class="ellipsis"
+              />
+            </div>
+            <div class="flexbox-2">
+              <h1 id="total-hours-work" class="total-hours">32 hrs</h1>
+              <aside class="prev-weeks-hours">
+                <h6>Last Week -</h6>
+                <h6>36hrs</h6>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <!-- Play Hours Container -->
+        <div id="block-two" class="hour-blocks">
+          <div id="blue" class="colors">
+            <img src="images/icon-play.svg" alt="video game controller icon" />
+          </div>
+          <div id="play-hours" class="hours">
+            <div class="flexbox-1">
+              <h5>Play</h5>
+              <img
+                src="images/icon-ellipsis.svg"
+                alt="ellipsis menu button"
+                class="ellipsis"
+              />
+            </div>
+            <div class="flexbox-2">
+              <h1 id="total-hours-play" class="total-hours">10 hrs</h1>
+              <aside class="prev-weeks-hours">
+                <h6>Last Week -</h6>
+                <h6>36hrs</h6>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <!-- Study Hours Container -->
+        <div id="block-three" class="hour-blocks">
+          <div id="pink" class="colors">
+            <img src="images/icon-study.svg" alt="book icon" />
+          </div>
+          <div id="study-hours" class="hours">
+            <div class="flexbox-1">
+              <h5>Study</h5>
+              <img
+                src="images/icon-ellipsis.svg"
+                alt="ellipsis menu button"
+                class="ellipsis"
+              />
+            </div>
+            <div class="flexbox-2">
+              <h1 id="total-hours-study" class="total-hours">4 hrs</h1>
+              <aside class="prev-weeks-hours">
+                <h6>Last Week -</h6>
+                <h6>7hrs</h6>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <!-- Exercise Hours Container -->
+        <div id="block-four" class="hour-blocks">
+          <div id="green" class="colors">
+            <img src="images/icon-exercise.svg" alt="exercise icon" />
+          </div>
+          <div id="exercise-hours" class="hours">
+            <div class="flexbox-1">
+              <h5>Exercise</h5>
+              <img
+                src="images/icon-ellipsis.svg"
+                alt="ellipsis menu button"
+                class="ellipsis"
+              />
+            </div>
+            <div class="flexbox-2">
+              <h1 id="total-hours-exercise" class="total-hours">4 hrs</h1>
+              <aside class="prev-weeks-hours">
+                <h6>Last Week -</h6>
+                <h6>5hrs</h6>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <!-- Social Hours Container -->
+        <div id="block-five" class="hour-blocks">
+          <div id="purple" class="colors">
+            <img src="images/icon-social.svg" alt="speech icon" />
+          </div>
+          <div id="social-hours" class="hours">
+            <div class="flexbox-1">
+              <h5>Social</h5>
+              <img
+                src="images/icon-ellipsis.svg"
+                alt="ellipsis menu button"
+                class="ellipsis"
+              />
+            </div>
+            <div class="flexbox-2">
+              <h1 id="total-hours-social" class="total-hours">5 hrs</h1>
+              <aside class="prev-weeks-hours">
+                <h6>Last Week -</h6>
+                <h6>10hrs</h6>
+              </aside>
+            </div>
+          </div>
+        </div>
+        <!-- Self Care Hours Container -->
+        <div id="block-six" class="hour-blocks">
+          <div id="yellow" class="colors">
+            <img src="images/icon-self-care.svg" alt="heart icon" />
+          </div>
+          <div id="selfcare-hours" class="hours">
+            <div class="flexbox-1">
+              <h5>Self Care</h5>
+              <img
+                src="images/icon-ellipsis.svg"
+                alt="ellipsis menu button"
+                class="ellipsis"
+              />
+            </div>
+            <div class="flexbox-2">
+              <h1 id="total-hours-selfcare" class="total-hours">2 hrs</h1>
+              <aside class="prev-weeks-hours">
+                <h6>Last Week -</h6>
+                <h6>2hrs</h6>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

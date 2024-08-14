@@ -1,0 +1,361 @@
+/* Global Styles */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(15, 100%, 70%); /* work */
+  --soft-blue: hsl(195, 74%, 62%); /* play */
+  --pink: hsl(348, 100%, 68%); /* study */
+  --lime-green: hsl(145, 58%, 55%); /* exercise */
+  --violet: hsl(264, 64%, 52%); /* social */
+  --soft-orange: hsl(43, 84%, 65%); /* self care
+  --
+  */
+
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  --font-family: "Rubik", sans-serif;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+}
+
+*,
+*::before,
+*::after {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ********** Mobile Styles ********** */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1469px;
+}
+
+.full-header {
+  width: 327px;
+  height: 203px;
+  margin-bottom: 10px;
+}
+
+.employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 327px;
+  height: 133px;
+  background: #5747ea;
+  border-radius: 15px;
+}
+
+.employee img {
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  background: #d8d8d8;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#employee-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family);
+}
+
+#employee-info h6 {
+  align-self: flex-start;
+  font-weight: var(--font-regular);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.93rem;
+  line-height: 1.12rem;
+  color: var(--pale-blue);
+  height: 1.12rem;
+}
+
+#employee-info h2 {
+  font-weight: var(--font-light);
+  color: var(--white);
+  font-size: 1.5rem;
+  height: 1.12rem;
+}
+
+.nav {
+  /* outline: green solid 2px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.37rem;
+  background: #1c204b;
+  border-bottom-left-radius: 0.93rem;
+  border-bottom-right-radius: 0.93rem;
+  position: relative;
+  bottom: 0.62rem;
+  z-index: -1;
+}
+
+.nav h6 {
+  font-size: 1.12rem;
+}
+
+.nav-links {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: var(--font-light);
+  font-size: 1.12rem;
+  line-height: 1.31rem;
+  color: #7078c9;
+}
+
+#middle-nav {
+  color: var(--white);
+}
+
+/* ********** Hours' Containers ********** */
+
+.hour-blocks {
+  height: 160px;
+  margin-bottom: 24px;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 325px;
+  height: 4.37rem;
+  background-color: var(--orange);
+  border-top-left-radius: 0.93rem;
+  border-top-right-radius: 0.93rem;
+  z-index: -1;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.colors img {
+  width: 78px;
+  height: 78px;
+  position: relative;
+  bottom: 7px;
+  left: 112px;
+}
+
+.hours {
+  /* outline: rgb(120, 21, 38) solid 3px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.93rem;
+  width: 20.43rem;
+  height: 7.62rem;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  position: relative;
+  right: 1px;
+  bottom: 50px;
+}
+
+.flexbox-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 279px;
+  height: 22px;
+  margin-bottom: 6px;
+}
+
+/* .flexbox-work-1,
+.flexbox-play-1,
+.flexbox-study-1,
+.flexbox-exercise-1,
+.flexbox-social-1,
+.flexbox-selfcare-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 279px;
+  height: 22px;
+  margin-bottom: 6px;
+} */
+
+.flexbox-1 h5 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: var(--font-regular);
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+/* .flexbox-work-1 h5,
+.flexbox-play-1 h5,
+.flexbox-study-1 h5,
+.flexbox-exercise-1 h5,
+.flexbox-social-1 h5,
+.flexbox-selfcare-1 h5 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: var(--font-regular);
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+} */
+
+/* ***Perhaps Not Needed***
+.flexbox-work-1 img,
+.flexbox-play-1 img,
+.flexbox-study-1 img,
+.flexbox-exercise-1 img,
+.flexbox-social img,
+.flexbox-selfcare img {
+  width: 21px;
+  height: 5px;
+} */
+
+.flexbox-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 279px;
+  height: 38px;
+}
+
+/* .flexbox-work-2,
+.flexbox-play-2,
+.flexbox-study-2,
+.flexbox-exercise-2,
+.flexbox-social-2,
+.flexbox-selfcare-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 279px;
+  height: 38px;
+} */
+
+.total-hours {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+/*
+#total-hours-work,
+#total-hours-play,
+#total-hours-study,
+#total-hours-exercise,
+#total-hours-social,
+#total-hours-selfcare {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+} */
+
+.prev-weeks-hours {
+  display: flex;
+  align-items: center;
+  color: #bbc0ff;
+}
+
+.prev-weeks-hours h6 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #bbc0ff;
+}
+
+/* ********** Play Hours Container ********** */
+
+#blue {
+  background-color: var(--soft-blue);
+}
+
+/* ********** Study Hours Container ********** */
+
+#pink {
+  background-color: var(--pink);
+}
+
+/* ********** Exercise Hours Container ********** */
+
+#green {
+  background-color: var(--lime-green);
+}
+
+/* ********** Social Hours Container ********** */
+
+#purple {
+  background-color: var(--violet);
+}
+
+/* ********** Selfcare Hours Container ********** */
+
+#yellow {
+  background-color: var(--soft-orange);
+}
+
+/* ********** Desktop Media Query **********  */
+
+/* @media (min-width: 1340px) {
+  .content-wrapper {
+    display: flex;
+  }
+
+  .full-header {
+    outline: red solid 2px;
+    height: 518px;
+  }
+
+  .employee {
+    outline: blue solid 2px;
+    height: 354px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 164px;
+  }
+
+  .overall-hours {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hours {
+    height: 199px;
+  }
+} */
