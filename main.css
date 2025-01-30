@@ -61,6 +61,14 @@ body {
   margin-bottom: 10px;
 }
 
+.mobile-employee {
+  display: flex;
+}
+
+.desktop-employee {
+  display: none;
+}
+
 .employee {
   display: flex;
   justify-content: center;
@@ -191,20 +199,6 @@ body {
   margin-bottom: 6px;
 }
 
-/* .flexbox-work-1,
-.flexbox-play-1,
-.flexbox-study-1,
-.flexbox-exercise-1,
-.flexbox-social-1,
-.flexbox-selfcare-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 279px;
-  height: 22px;
-  margin-bottom: 6px;
-} */
-
 .flexbox-1 h5 {
   font-family: var(--font-family);
   font-style: normal;
@@ -214,49 +208,12 @@ body {
   color: #ffffff;
 }
 
-/* .flexbox-work-1 h5,
-.flexbox-play-1 h5,
-.flexbox-study-1 h5,
-.flexbox-exercise-1 h5,
-.flexbox-social-1 h5,
-.flexbox-selfcare-1 h5 {
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: var(--font-regular);
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-} */
-
-/* ***Perhaps Not Needed***
-.flexbox-work-1 img,
-.flexbox-play-1 img,
-.flexbox-study-1 img,
-.flexbox-exercise-1 img,
-.flexbox-social img,
-.flexbox-selfcare img {
-  width: 21px;
-  height: 5px;
-} */
-
 .flexbox-2 {
   display: flex;
   justify-content: space-between;
   width: 279px;
   height: 38px;
 }
-
-/* .flexbox-work-2,
-.flexbox-play-2,
-.flexbox-study-2,
-.flexbox-exercise-2,
-.flexbox-social-2,
-.flexbox-selfcare-2 {
-  display: flex;
-  justify-content: space-between;
-  width: 279px;
-  height: 38px;
-} */
 
 .total-hours {
   font-family: var(--font-family);
@@ -265,20 +222,6 @@ body {
   font-size: 32px;
   line-height: 38px;
 }
-
-/*
-#total-hours-work,
-#total-hours-play,
-#total-hours-study,
-#total-hours-exercise,
-#total-hours-social,
-#total-hours-selfcare {
-  font-family: var(--font-family);
-  font-style: normal;
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 38px;
-} */
 
 .prev-weeks-hours {
   display: flex;
@@ -328,19 +271,60 @@ body {
 
 /* ********** Desktop Media Query **********  */
 
-/* @media (min-width: 1340px) {
+@media (min-width: 1340px) {
   .content-wrapper {
     display: flex;
   }
 
   .full-header {
-    outline: red solid 2px;
+    /* outline: red solid 2px; */
+    width: 255px;
     height: 518px;
+    margin-left: 50px;
   }
 
   .employee {
-    outline: blue solid 2px;
+    /* outline: green solid 4px; */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 255px;
     height: 354px;
+  }
+
+  .employee img {
+    align-self: flex-start;
+    margin-left: 32px;
+  }
+
+  #employee-info {
+    width: 139px;
+    height: 116px;
+    margin-left: 32px;
+    margin-bottom: 80px;
+  }
+
+  .mobile-employee {
+    display: none;
+  }
+
+  .desktop-employee {
+    display: flex;
+    margin-bottom: 28px;
+    height: 95px;
+  }
+
+  #employee-info h6 {
+    margin-top: 43px;
+  }
+
+  #employee-info h2 {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: var(--font-light);
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+    margin-bottom: 35px;
   }
 
   .nav {
@@ -350,12 +334,78 @@ body {
     height: 164px;
   }
 
+  .nav-links {
+    margin-left: 32px;
+  }
+
+  #first-nav {
+    margin-top: 26px;
+    margin-bottom: 8px;
+  }
+
+  #first-nav:hover {
+    color: white;
+  }
+
+  #second-nav {
+    margin-bottom: 8px;
+    color: white;
+  }
+
+  #third-nav {
+    margin-bottom: 33px;
+  }
+
   .overall-hours {
+    outline: red solid 2px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .hours {
-    height: 199px;
+    outline: blue solid 2px;
+    width: 255px;
+    height: 154px;
+    padding-bottom: 45px;
   }
-} */
+
+  .colors {
+    width: 253px;
+  }
+
+  .flexbox-1 {
+    width: 190px;
+    height: 22px;
+    margin-right: 30px;
+    margin-bottom: 24px;
+  }
+
+  .flexbox-2 {
+    flex-direction: column;
+    margin-left: 60px;
+  }
+
+  .total-hours {
+    /* outline: red solid 2px; */
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: var(--font-light);
+    font-size: 56px;
+    line-height: 66px;
+    width: 160px;
+    margin-bottom: 8px;
+  }
+
+  #block-one,
+  #block-four {
+    margin: 0 30px 30px 30px;
+  }
+
+  #block-two {
+    margin: 0 30px 30px 0;
+  }
+
+  #block-five {
+    margin-right: 30px;
+  }
+}
