@@ -6,9 +6,7 @@
   --pink: hsl(348, 100%, 68%); /* study */
   --lime-green: hsl(145, 58%, 55%); /* exercise */
   --violet: hsl(264, 64%, 52%); /* social */
-  --soft-orange: hsl(43, 84%, 65%); /* self care
-  --
-  */
+  --soft-orange: hsl(43, 84%, 65%); /* self care */
 
   --very-dark-blue: hsl(226, 43%, 10%);
   --dark-blue: hsl(235, 46%, 20%);
@@ -26,7 +24,6 @@
 *,
 *::before,
 *::after {
-  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
 }
@@ -38,7 +35,7 @@ body {
 
 body {
   background-color: var(--very-dark-blue);
-  margin-top: 30px;
+  margin-top: 1.87rem;
 }
 
 .hidden {
@@ -52,13 +49,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1469px;
+  height: 91.81rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 86.75rem;
 }
 
 .full-header {
-  width: 327px;
-  height: 203px;
-  margin-bottom: 10px;
+  width: 20.43rem;
+  height: 12.68rem;
+  margin-bottom: 0.62rem;
 }
 
 .mobile-employee {
@@ -73,20 +77,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 327px;
-  height: 133px;
+  width: 20.43rem;
+  height: 8.31rem;
   background: #5747ea;
-  border-radius: 15px;
+  border-radius: 0.93rem;
 }
 
 .employee img {
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  max-width: 100%;
+  height: auto;
   box-sizing: border-box;
   background: #d8d8d8;
   border: 3px solid #ffffff;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 #employee-info {
@@ -100,7 +105,6 @@ body {
   align-self: flex-start;
   font-weight: var(--font-regular);
   font-style: normal;
-  font-weight: 400;
   font-size: 0.93rem;
   line-height: 1.12rem;
   color: var(--pale-blue);
@@ -115,7 +119,6 @@ body {
 }
 
 .nav {
-  /* outline: green solid 2px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -124,15 +127,27 @@ body {
   border-bottom-left-radius: 0.93rem;
   border-bottom-right-radius: 0.93rem;
   position: relative;
-  bottom: 0.62rem;
-  z-index: -1;
+  bottom: 0.6rem;
 }
 
-.nav h6 {
+.nav ul {
+  /* outline: red solid 2px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  /* outline: red solid 3px; */
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
   font-size: 1.12rem;
+  width: 6.81rem;
 }
 
 .nav-links {
+  /* outline: yellow solid 3px; */
   font-family: var(--font-family);
   font-style: normal;
   font-weight: var(--font-light);
@@ -141,37 +156,42 @@ body {
   color: #7078c9;
 }
 
-#middle-nav {
+#second-nav {
   color: var(--white);
+  padding-right: 0.75rem;
+}
+
+#third-nav {
+  padding-right: 0.62rem;
 }
 
 /* ********** Hours' Containers ********** */
 
 .hour-blocks {
-  height: 160px;
-  margin-bottom: 24px;
+  height: 10rem;
+  margin-bottom: 1.5rem;
 }
 
 .colors {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 325px;
+  width: 20.31rem;
   height: 4.37rem;
   background-color: var(--orange);
   border-top-left-radius: 0.93rem;
   border-top-right-radius: 0.93rem;
   z-index: -1;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .colors img {
-  width: 78px;
-  height: 78px;
+  width: 4.87rem;
+  height: 4.87rem;
   position: relative;
-  bottom: 7px;
-  left: 112px;
+  bottom: 0.43rem;
+  left: 7rem;
 }
 
 .hours {
@@ -186,41 +206,41 @@ body {
   color: var(--white);
   background-color: var(--dark-blue);
   position: relative;
-  right: 1px;
-  bottom: 50px;
+  right: 0.06rem;
+  bottom: 3.12rem;
 }
 
 .flexbox-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 279px;
-  height: 22px;
-  margin-bottom: 6px;
+  width: 17.43rem;
+  height: 1.37rem;
+  margin-bottom: 0.37rem;
 }
 
 .flexbox-1 h5 {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: var(--font-regular);
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.12rem;
+  line-height: 1.31rem;
   color: #ffffff;
 }
 
 .flexbox-2 {
   display: flex;
   justify-content: space-between;
-  width: 279px;
-  height: 38px;
+  width: 17.43rem;
+  height: 2.37rem;
 }
 
 .total-hours {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 300;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 2rem;
+  line-height: 2.37rem;
 }
 
 .prev-weeks-hours {
@@ -233,8 +253,8 @@ body {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 0.93rem;
+  line-height: 1.12rem;
   text-align: right;
   color: #bbc0ff;
 }
@@ -272,35 +292,45 @@ body {
 /* ********** Desktop Media Query **********  */
 
 @media (min-width: 1340px) {
+  /* ChatGPT Added Code */
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent horizontal overflow */
+  }
+
   .content-wrapper {
+    height: 32.37rem;
     display: flex;
+    flex-direction: row;
   }
 
   .full-header {
     /* outline: red solid 2px; */
-    width: 255px;
-    height: 518px;
-    margin-left: 50px;
+    width: 15.93rem;
+    height: 32.37rem;
+    margin-left: 3.12rem;
   }
 
   .employee {
     /* outline: green solid 4px; */
     flex-direction: column;
     align-items: flex-start;
-    width: 255px;
-    height: 354px;
+    width: 15.93rem;
+    height: 22.12rem;
   }
 
   .employee img {
     align-self: flex-start;
-    margin-left: 32px;
+    margin-left: 2rem;
   }
 
   #employee-info {
-    width: 139px;
-    height: 116px;
-    margin-left: 32px;
-    margin-bottom: 80px;
+    width: 8.68rem;
+    height: 7.25rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
   }
 
   .mobile-employee {
@@ -309,80 +339,88 @@ body {
 
   .desktop-employee {
     display: flex;
-    margin-bottom: 28px;
-    height: 95px;
+    margin-bottom: 1.75rem;
+    height: 5.93rem;
   }
 
   #employee-info h6 {
-    margin-top: 43px;
+    margin-top: 2.68rem;
   }
 
   #employee-info h2 {
     font-family: "Rubik";
     font-style: normal;
     font-weight: var(--font-light);
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 2.5rem;
+    line-height: 2.93rem;
     color: #ffffff;
-    margin-bottom: 35px;
+    margin-bottom: 2.18rem;
   }
 
   .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 164px;
+    justify-content: flex-start;
+    height: 11.12rem;
+    z-index: 1;
   }
 
-  .nav-links {
-    margin-left: 32px;
+  .nav ul {
+    /* outline: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    height: 6.62rem;
+    width: 4.25rem;
+    margin-left: 2rem;
+  }
+
+  .nav li {
+    justify-content: flex-start;
   }
 
   #first-nav {
-    margin-top: 26px;
-    margin-bottom: 8px;
+    margin-bottom: 0.93rem;
   }
 
-  #first-nav:hover {
-    color: white;
-  }
-
-  #second-nav {
-    margin-bottom: 8px;
+  #first-nav:hover,
+  #third-nav:hover {
     color: white;
   }
 
   #third-nav {
-    margin-bottom: 33px;
+    margin-top: 0.93rem;
   }
 
   .overall-hours {
-    outline: red solid 2px;
+    /* outline: red solid 2px; */
     display: flex;
     flex-wrap: wrap;
+    height: 35.18rem;
+    width: 72.68rem;
+    width: 55.68rem;
   }
 
   .hours {
-    outline: blue solid 2px;
-    width: 255px;
-    height: 154px;
-    padding-bottom: 45px;
+    /* outline: blue solid 2px; */
+    width: 15.93rem;
+    height: 9.6rem;
+    padding-bottom: 2.81rem;
   }
 
   .colors {
-    width: 253px;
+    width: 15.81rem;
   }
 
   .flexbox-1 {
-    width: 190px;
-    height: 22px;
-    margin-right: 30px;
-    margin-bottom: 24px;
+    width: 11.87rem;
+    height: 1.37rem;
+    margin-right: 1.87rem;
+    margin-bottom: 1.5rem;
   }
+
+  /* #social-hours{} */
 
   .flexbox-2 {
     flex-direction: column;
-    margin-left: 60px;
+    margin-left: 3.75rem;
   }
 
   .total-hours {
@@ -390,22 +428,22 @@ body {
     font-family: "Rubik";
     font-style: normal;
     font-weight: var(--font-light);
-    font-size: 56px;
-    line-height: 66px;
-    width: 160px;
-    margin-bottom: 8px;
+    font-size: 3.5rem;
+    line-height: 4.12rem;
+    width: 10rem;
+    margin-bottom: 0.5rem;
   }
 
   #block-one,
   #block-four {
-    margin: 0 30px 30px 30px;
+    margin: 0 1.87rem 1.87rem 1.87rem;
   }
 
   #block-two {
-    margin: 0 30px 30px 0;
+    margin: 0 1.87rem 1.87rem 0;
   }
 
   #block-five {
-    margin-right: 30px;
+    margin: 0 1.87rem 0 0;
   }
 }
