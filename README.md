@@ -11,8 +11,8 @@ This is a HTML and CSS project. It is a mock website for retrieving employee inf
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/rtoddm/time_tracking_dashboard)
-- Live Site URL: [Add live site URL here](https://rtoddm.github.io/time_tracking_dashboard/)
+- Solution URL: [GitHub Repository](https://github.com/rtoddm/time_tracking_dashboard)
+- Live Site URL: [GitHub Live Page](https://rtoddm.github.io/time_tracking_dashboard/)
 
 ### Built with
 
