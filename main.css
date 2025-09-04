@@ -131,14 +131,12 @@ body {
 }
 
 .nav ul {
-  /* outline: red solid 2px; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .nav li {
-  /* outline: red solid 3px; */
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -147,7 +145,6 @@ body {
 }
 
 .nav-links {
-  /* outline: yellow solid 3px; */
   font-family: var(--font-family);
   font-style: normal;
   font-weight: var(--font-light);
@@ -157,7 +154,7 @@ body {
 }
 
 #second-nav {
-  color: var(--white);
+  /* color: var(--white); */
   padding-right: 0.75rem;
 }
 
@@ -195,7 +192,6 @@ body {
 }
 
 .hours {
-  /* outline: rgb(120, 21, 38) solid 3px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,12 +288,11 @@ body {
 /* ********** Desktop Media Query **********  */
 
 @media (min-width: 1340px) {
-  /* ChatGPT Added Code */
   body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent horizontal overflow */
+    overflow: hidden;
   }
 
   .content-wrapper {
@@ -307,14 +302,12 @@ body {
   }
 
   .full-header {
-    /* outline: red solid 2px; */
     width: 15.93rem;
     height: 32.37rem;
     margin-left: 3.12rem;
   }
 
   .employee {
-    /* outline: green solid 4px; */
     flex-direction: column;
     align-items: flex-start;
     width: 15.93rem;
@@ -364,7 +357,6 @@ body {
   }
 
   .nav ul {
-    /* outline: red solid 2px; */
     display: flex;
     flex-direction: column;
     height: 6.62rem;
@@ -380,8 +372,7 @@ body {
     margin-bottom: 0.93rem;
   }
 
-  #first-nav:hover,
-  #third-nav:hover {
+  .nav-links:hover {
     color: white;
   }
 
@@ -390,7 +381,6 @@ body {
   }
 
   .overall-hours {
-    /* outline: red solid 2px; */
     display: flex;
     flex-wrap: wrap;
     height: 35.18rem;
@@ -399,7 +389,6 @@ body {
   }
 
   .hours {
-    /* outline: blue solid 2px; */
     width: 15.93rem;
     height: 9.6rem;
     padding-bottom: 2.81rem;
@@ -416,15 +405,12 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  /* #social-hours{} */
-
   .flexbox-2 {
     flex-direction: column;
     margin-left: 3.75rem;
   }
 
   .total-hours {
-    /* outline: red solid 2px; */
     font-family: "Rubik";
     font-style: normal;
     font-weight: var(--font-light);

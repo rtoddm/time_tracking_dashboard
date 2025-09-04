@@ -6,6 +6,7 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="stylesheet" href="main.css" />
+    <script src="./script.js" defer></script>
 
     <!-- Google Font - Rubik -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,15 +43,23 @@
         </div>
         <nav class="nav">
           <ul>
-            <li><a id="first-nav" class="nav-links">Daily</a></li>
-            <li><a id="second-nav" class="nav-links">Weekly</a></li>
-            <li><a id="third-nav" class="nav-links">Monthly</a></li>
+            <li>
+              <a id="first-nav" class="nav-links" data-time="daily">Daily</a>
+            </li>
+            <li>
+              <a id="second-nav" class="nav-links" data-time="weekly">Weekly</a>
+            </li>
+            <li>
+              <a id="third-nav" class="nav-links" data-time="monthly"
+                >Monthly</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
       <section class="overall-hours">
         <!-- Work Hours Container -->
-        <div id="block-one" class="hour-blocks">
+        <div id="block-one" class="hour-blocks" data-title="Work">
           <div id="orange" class="colors">
             <img
               src="images/icon-work.svg"
@@ -69,16 +78,18 @@
               />
             </div>
             <div class="flexbox-2">
-              <h1 id="total-hours-work" class="total-hours">32 hrs</h1>
+              <h1 id="total-hours-work" class="total-hours current-hours">
+                32 hrs
+              </h1>
               <aside class="prev-weeks-hours">
                 <h6>Last Week -</h6>
-                <h6>36hrs</h6>
+                <h6 class="previous-hours">36hrs</h6>
               </aside>
             </div>
           </div>
         </div>
         <!-- Play Hours Container -->
-        <div id="block-two" class="hour-blocks">
+        <div id="block-two" class="hour-blocks" data-title="Play">
           <div id="blue" class="colors">
             <img
               src="images/icon-play.svg"
@@ -97,16 +108,18 @@
               />
             </div>
             <div class="flexbox-2">
-              <h1 id="total-hours-play" class="total-hours">10 hrs</h1>
+              <h1 id="total-hours-play" class="total-hours current-hours">
+                10 hrs
+              </h1>
               <aside class="prev-weeks-hours">
                 <h6>Last Week -</h6>
-                <h6>36hrs</h6>
+                <h6 class="previous-hours">36hrs</h6>
               </aside>
             </div>
           </div>
         </div>
         <!-- Study Hours Container -->
-        <div id="block-three" class="hour-blocks">
+        <div id="block-three" class="hour-blocks" data-title="Study">
           <div id="pink" class="colors">
             <img src="images/icon-study.svg" alt="book icon" loading="lazy" />
           </div>
@@ -121,16 +134,18 @@
               />
             </div>
             <div class="flexbox-2">
-              <h1 id="total-hours-study" class="total-hours">4 hrs</h1>
+              <h1 id="total-hours-study" class="total-hours current-hours">
+                4 hrs
+              </h1>
               <aside class="prev-weeks-hours">
                 <h6>Last Week -</h6>
-                <h6>7hrs</h6>
+                <h6 class="previous-hours">7hrs</h6>
               </aside>
             </div>
           </div>
         </div>
         <!-- Exercise Hours Container -->
-        <div id="block-four" class="hour-blocks">
+        <div id="block-four" class="hour-blocks" data-title="Exercise">
           <div id="green" class="colors">
             <img
               src="images/icon-exercise.svg"
@@ -149,16 +164,18 @@
               />
             </div>
             <div class="flexbox-2">
-              <h1 id="total-hours-exercise" class="total-hours">4 hrs</h1>
+              <h1 id="total-hours-exercise" class="total-hours current-hours">
+                4 hrs
+              </h1>
               <aside class="prev-weeks-hours">
                 <h6>Last Week -</h6>
-                <h6>5hrs</h6>
+                <h6 class="previous-hours">5hrs</h6>
               </aside>
             </div>
           </div>
         </div>
         <!-- Social Hours Container -->
-        <div id="block-five" class="hour-blocks">
+        <div id="block-five" class="hour-blocks" data-title="Social">
           <div id="purple" class="colors">
             <img
               src="images/icon-social.svg"
@@ -177,16 +194,18 @@
               />
             </div>
             <div class="flexbox-2">
-              <h1 id="total-hours-social" class="total-hours">5 hrs</h1>
+              <h1 id="total-hours-social" class="total-hours current-hours">
+                5 hrs
+              </h1>
               <aside class="prev-weeks-hours">
                 <h6>Last Week -</h6>
-                <h6>10hrs</h6>
+                <h6 class="previous-hours">10hrs</h6>
               </aside>
             </div>
           </div>
         </div>
         <!-- Self Care Hours Container -->
-        <div id="block-six" class="hour-blocks">
+        <div id="block-six" class="hour-blocks" data-title="Self Care">
           <div id="yellow" class="colors">
             <img
               src="images/icon-self-care.svg"
@@ -205,10 +224,12 @@
               />
             </div>
             <div class="flexbox-2">
-              <h1 id="total-hours-selfcare" class="total-hours">2 hrs</h1>
+              <h1 id="total-hours-selfcare" class="total-hours current-hours">
+                2 hrs
+              </h1>
               <aside class="prev-weeks-hours">
                 <h6>Last Week -</h6>
-                <h6>2hrs</h6>
+                <h6 class="previous-hours">2hrs</h6>
               </aside>
             </div>
           </div>
