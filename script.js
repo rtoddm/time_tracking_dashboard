@@ -31,3 +31,7 @@ buttons.forEach(function (btn) {
     getData(selectedTime);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  getData("daily");
+});

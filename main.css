@@ -295,6 +295,10 @@ body {
     overflow: hidden;
   }
 
+  .active {
+    color: white;
+  }
+
   .content-wrapper {
     height: 32.37rem;
     display: flex;
@@ -416,7 +420,7 @@ body {
     font-weight: var(--font-light);
     font-size: 3.5rem;
     line-height: 4.12rem;
-    width: 10rem;
+    max-width: 11rem;
     margin-bottom: 0.5rem;
   }
 
