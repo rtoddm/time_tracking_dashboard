@@ -2,7 +2,7 @@
 
 // Step One: Pull data from JSON File
 let getData = async function (selectedTime) {
-  const response = await fetch("./data.json");
+  const response = await fetch("/api/activities");
   const employeeData = await response.json();
 
   employeeInfo(employeeData, selectedTime);
