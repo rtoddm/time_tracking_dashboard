@@ -10,7 +10,7 @@
 This is a HTML and CSS project. It is a mock website for retrieving employee information.
 
 ### Links
-- Live Site URL: [Live Page]((https://time-tracking-dashboard-uzoc.onrender.com/))
+- Live Site URL: [Live Page](https://time-tracking-dashboard-uzoc.onrender.com/)
 
 ### Built with
 
