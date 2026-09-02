@@ -1,7 +1,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Links](#links)
+- [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
 
